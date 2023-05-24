@@ -10,6 +10,9 @@
 
 [![My Skills](https://skillicons.dev/icons?i=html,css,js,tailwind,bootstrap,wordpress,photoshop&theme=dark)](https://github.com/amirallami-code)
 
+🔭 I’m currently learning JS </br>
+⚡ Fun fact: i'm gamer 
+
 ⚒️ I develop what comes to my head with some style :)
 
 <!--
