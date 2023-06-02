@@ -8,6 +8,6 @@
 
 #### 🪐 My Expertise
 
-[![My Skills](https://skillicons.dev/icons?i=html,css,js,vue, tailwind,bootstrap,wordpress,photoshop&theme=dark)](https://github.com/amirallami-code)
+[![My Skills](https://skillicons.dev/icons?i=html,css,js,tailwind,bootstrap,wordpress,photoshop&theme=dark)](https://github.com/amirallami-code)
 
 ⚒️ I develop what comes to my head with some style :)
