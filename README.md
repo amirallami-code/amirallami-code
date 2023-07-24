@@ -12,7 +12,7 @@
 
 <a href="https://github.com/amirallami-code">
 
-<img src="https://skillicons.dev/icons?i=html,css,js,tailwind,bootstrap,wordpress,ps" />
+<img src="https://skillicons.dev/icons?i=html,css,js,tailwind,regex, bootstrap,wordpress,ps" />
 
 </a>
 
