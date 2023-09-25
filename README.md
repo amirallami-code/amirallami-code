@@ -5,9 +5,7 @@
 
 ⚒️ I develop what comes to my head with some style :)
 
+ 🪐 I Also have experience with
 
-#### 🪐 I Also have experience with
-
-<a href="https://github.com/amirallami-code">
 <img src="https://skillicons.dev/icons?i=html,css,js,tailwind,bootstrap,regex,git,wordpress,ps" />
 </a>
