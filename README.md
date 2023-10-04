@@ -14,7 +14,6 @@ const aboutMe = () => {
               I enjoy ${this.getHobbiesCount()} hobbies: ${this.hobbies.join(", ")}.`;
     }
   };
-
   return myLife;
 };
 const myInfo = aboutMe();
