@@ -20,7 +20,7 @@ const myInfo = aboutMe();
 console.log(myInfo.introduce());
 ```
 
-🪐 I have some experience with
+🪐 I have some experience with:
 
 <img src="https://skillicons.dev/icons?i=html,css,js,tailwind,bootstrap,regex,git,wordpress"/> 
 </a>
