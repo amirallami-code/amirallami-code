@@ -24,3 +24,5 @@ console.log(myInfo.introduce());
 
 <img src="https://skillicons.dev/icons?i=html,css,js,tailwind,bootstrap,regex,git,wordpress"/> 
 </a>
+
+<p align="center"> <img src="https://komarev.com/ghpvc/?username=amirallami-code&label=Profile%20views&color=0e75b6&style=flat" alt="amirallami-code" /> </p>
