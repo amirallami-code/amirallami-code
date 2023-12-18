@@ -19,10 +19,9 @@ const aboutMe = () => {
 const myInfo = aboutMe();
 console.log(myInfo.introduce());
 ```
+<div align="center">
+  <img src="https://skillicons.dev/icons?i=html,css,js,tailwind,bootstrap,regex,git,wordpress"/> 
+</div>
 
-🪐 I have some experience with:
+<!-- <p align="center"> <img src="https://komarev.com/ghpvc/?username=amirallami-code&label=Profile%20views&color=gray&style=flat" alt="amirallami-code" /> </p> -->
 
-<img src="https://skillicons.dev/icons?i=html,css,js,tailwind,bootstrap,regex,git,wordpress"/> 
-</a>
-
-<p align="center"> <img src="https://komarev.com/ghpvc/?username=amirallami-code&label=Profile%20views&color=gray&style=flat" alt="amirallami-code" /> </p>
