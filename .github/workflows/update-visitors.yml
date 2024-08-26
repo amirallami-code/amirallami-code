@@ -2,7 +2,7 @@ name: Update Visitors Count
 
 on:
   schedule:
-    - cron: "0 * * * *"
+    - cron: "0 */12 * * *"
   workflow_dispatch:
 
 jobs:
@@ -17,7 +17,8 @@ jobs:
       - name: Update README
         run: |
           VISITORS_COUNT=$(curl -s "https://profile-counter.glitch.me/amirallami-code/count.svg" | grep -oP '(?<=<text[^>]*>)[^<]+' | head -1)
-          sed -i 's/visitors: "[0-9]*"/visitors: "'$VISITORS_COUNT'"/' README.md
+          sed -i 's/visitors: "Visitors: [0-9]*"/visitors: "Visitors: '$VISITORS_COUNT'"/' README.md
+          cat README.md
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add README.md
