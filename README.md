@@ -22,7 +22,7 @@ const myInfo = aboutMe();
 myInfo.introduce();
 ```
 
-Visitors: 0
+Visitors: 
 
 <div align="center">
   <img src="https://skillicons.dev/icons?i=html,css,js,tailwind,bootstrap,regex,git,wordpress"/> 
