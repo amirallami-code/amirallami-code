@@ -16,8 +16,9 @@ jobs:
           node-version: "14"
       - name: Update README
         run: |
-          VISITORS_COUNT=$(curl -s "https://profile-counter.glitch.me/amirallami-code/count.svg" | grep -oP '(?<=<text[^>]*>)[^<]+' | head -1)
-          sed -i 's/visitors: "Visitors: [0-9]*"/visitors: "Visitors: '$VISITORS_COUNT'"/' README.md
+          sudo apt-get install -y jq
+          VISITORS_COUNT=$(curl -s "https://api.github.com/repos/amirallami-code/amirallami-code/traffic/views" | jq '.count')
+          sed -i 's/visitors: "[^"]*"/visitors: "'$VISITORS_COUNT'"/' README.md
           cat README.md
           git config user.name github-actions
           git config user.email github-actions@github.com
