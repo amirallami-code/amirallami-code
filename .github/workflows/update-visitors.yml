@@ -2,27 +2,34 @@ name: Update Visitors Count
 
 on:
   schedule:
-    - cron: "0 */12 * * *"
+    - cron: '0 */12 * * *'  # هر 12 ساعت اجرا می‌شود
   workflow_dispatch:
 
 jobs:
   update-readme:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Use Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: "14"
-      - name: Update README
-        run: |
-          VISITORS_COUNT=$(echo "Fetched count: $VISITORS_COUNT" curl -s "https://visitor-badge.laobi.icu/badge?page_id=amirallami-code.amirallami-code" | grep -oP '(?<=visits: )[0-9]+')
-          sed -i 's/visitors: "[^"]*"/visitors: "'$VISITORS_COUNT'"/' README.md
-          cat README.md
-          git config user.name github-actions
-          git config user.email github-actions@github.com
-          git add README.md
-          git commit -m "Update visitors count to $VISITORS_COUNT"
-          git push
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - uses: actions/checkout@v2
+    - name: Update README
+      run: |
+        set -x 
+        VISITORS_COUNT=$(curl -s "https://profile-counter.glitch.me/amirallami-code/count.svg" | grep -oP '(?<=<text[^>]*>)[^<]+' | head -1)
+        echo "Fetched count: $VISITORS_COUNT"
+        
+        echo "Current README content:"
+        cat README.md
+        
+        sed -i 's/visitors: "Visitors: [0-9]*"/visitors: "Visitors: '$VISITORS_COUNT'"/' README.md
+        
+        echo "Updated README content:"
+        cat README.md
+        
+        git diff
+        
+        git config user.name github-actions
+        git config user.email github-actions@github.com
+        git add README.md
+        git commit -m "Update visitors count to $VISITORS_COUNT"
+        git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
