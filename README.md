@@ -1,26 +1,22 @@
 ```js
 const aboutMe = () => {
-  const myLife = {
-    innerName: "Amirhossein Allami",
-    innerBirthday: "October 7",
-    quote: "I develop what comes to my head with some style",
-    hobbies: ["coding", "algorithm", "game"],
-    getHobbiesCount: function () {
-      return this.hobbies.length;
-    },
-    visitors: "",
-    introduce: function () {
-      return `Hi, I'm ${this.innerName}. My birthday is on ${
-        this.innerBirthday
-      }.
-              One of my favorite quotes is "${this.quote}".
-              I enjoy ${this.getHobbiesCount()} hobbies: ${this.hobbies.join(
-        ", "
-      )}.
-              Visitors: ${this.visitors}`;
-    },
-  };
-  return myLife;
+    const myLife = {
+        innerName: "Amirhossein Allami",
+        innerBirthday: "October 7",
+        quote: "I develop what comes to my head with some style",
+        hobbies: ["coding", "algorithm", "game"],
+        getHobbiesCount: function () {
+            return this.hobbies.length;
+        },
+        visitors: "0",
+        introduce: function () {
+            return `Hi, I'm ${this.innerName}. My birthday is on ${this.innerBirthday}.
+                One of my favorite quotes is "${this.quote}".
+                I enjoy ${this.getHobbiesCount()} hobbies: ${this.hobbies.join(", ")}.
+                Visitors: ${this.visitors}`;
+        },
+    };
+    return myLife;
 };
 const myInfo = aboutMe();
 myInfo.introduce();
