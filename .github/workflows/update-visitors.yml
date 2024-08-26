@@ -16,8 +16,7 @@ jobs:
           node-version: "14"
       - name: Update README
         run: |
-          sudo apt-get install -y jq
-          VISITORS_COUNT=$(curl -s "https://api.github.com/repos/amirallami-code/amirallami-code/traffic/views" | jq '.count')
+          VISITORS_COUNT=$(curl -s "https://visitor-badge.laobi.icu/badge?page_id=amirallami-code.amirallami-code" | grep -oP '(?<=visits: )[0-9]+')
           sed -i 's/visitors: "[^"]*"/visitors: "'$VISITORS_COUNT'"/' README.md
           cat README.md
           git config user.name github-actions
