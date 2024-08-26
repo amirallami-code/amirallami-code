@@ -8,12 +8,10 @@ const aboutMe = () => {
         getHobbiesCount: function () {
             return this.hobbies.length;
         },
-        visitors: "Visitors: ",
         introduce: function () {
             return `Hi, I'm ${this.innerName}. My birthday is on ${this.innerBirthday}.
                 One of my favorite quotes is "${this.quote}".
-                I enjoy ${this.getHobbiesCount()} hobbies: ${this.hobbies.join(", ")}.
-                Visitors: ${this.visitors}`;
+                I enjoy ${this.getHobbiesCount()} hobbies: ${this.hobbies.join(", ")}`;
         },
     };
     return myLife;
