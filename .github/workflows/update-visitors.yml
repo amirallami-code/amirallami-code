@@ -13,13 +13,13 @@ jobs:
     - name: Update README
       run: |
         echo "Fetching visitor count..."
-        VISITORS_COUNT=$(curl -s "https://profile-counter.glitch.me/amirallami-code/count.svg")
+        VISITORS_COUNT=$(curl -s "https://profile-counter.glitch.me/{YOUR-USERNAME}/count.svg")
         echo "Raw SVG content:"
         echo "$VISITORS_COUNT"
         
-        echo "Trying to extract count..."
-        EXTRACTED_COUNT=$(echo "$VISITORS_COUNT" | grep -oP '(?<=<text[^>]*>)[^<]+' | head -1)
-        echo "Extracted content: $EXTRACTED_COUNT"
+        echo "Extracting count..."
+        EXTRACTED_COUNT=$(echo "$VISITORS_COUNT" | grep -oP '(?<=<text[^>]*>)[^<]+' | tr -d '\n' | sed 's/[^0-9]*//g')
+        echo "Extracted count: $EXTRACTED_COUNT"
         
         if [ -n "$EXTRACTED_COUNT" ] && [[ "$EXTRACTED_COUNT" =~ ^[0-9]+$ ]]; then
           echo "Valid count extracted: $EXTRACTED_COUNT"
