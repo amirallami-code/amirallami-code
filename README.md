@@ -1,37 +1,32 @@
 ```js
-const developerProfile = {
-  name: 'Amir',
-  title: 'Frontend Developer',
-  location: 'Shiraz, Iran',
-  aboutMe: 'Passionate frontend developer with a keen eye for design and a love for clean, efficient code. Always eager to learn and take on new challenges in the ever-evolving world of web development.',
-  skills: ['HTML', 'CSS', 'JavaScript', 'Tailwind', 'Bootstrap', 'RegEx', 'Git'],
-  currentlyLearning: 'React',
-  contact: {
-    email: 'your.email@example.com',
-    github: 'github.com/yourusername'
-  },
-  getCertificates: function() {
-    return [
-      { name: 'Frontend Web Development', issuer: 'Udacity' },
-      { name: 'JavaScript Algorithms and Data Structures', issuer: 'freeCodeCamp' }
-    ];
-  },
-  getRecentRepos: function() {
-    return [
-      { name: 'repo1', description: 'Description of repo1' },
-      { name: 'repo2', description: 'Description of repo2' },
-      { name: 'repo3', description: 'Description of repo3' }
-    ];
-  },
-  getCodingStats: function() {
-    return {
-      totalCommits: 573,
-      pullRequests: 48,
-      starredRepos: 26,
-      favoriteLanguages: ['JavaScript', 'HTML', 'CSS']
-    };
-  }
+const createDeveloperProfile = () => {
+  const profile = {
+    name: "Amir",
+    birthday: "October 7",
+    quote: "Turning caffeine into code since 2023",
+    interests: ["Web Development", "Algorithm Design", "Reading"],
+    technologies: ["HTML/CSS", "JavaScript", "Tailwind", "Bootstrap", "RegEx", "Git"],
+    contact: {
+      email: "amirallami.dev@gmail.com",
+      github: "github.com/amirallami-code"
+    },
+    introduce: function () {
+      return `
+        const developer = {
+          name: "${this.name}",
+          mantra: "${this.quote}",
+          expertise: ${JSON.stringify(this.specializations)},
+          stack: ${JSON.stringify(this.technologies)},
+          connect: ${JSON.stringify(this.contact)}
+        };
+      `;
+    },
+  };
+  return profile;
 };
+
+const developerProfile = createDeveloperProfile();
+console.log(developerProfile.introduce());
 ```
 
 <div align="center">
