@@ -10,21 +10,27 @@ const developerProfile = {
     email: 'your.email@example.com',
     github: 'github.com/yourusername'
   },
-  certificates: [
-    { name: 'Frontend Web Development', issuer: 'Udacity' },
-    { name: 'JavaScript Algorithms and Data Structures', issuer: 'freeCodeCamp' }
-  ],
-  codingStats: {
-    totalCommits: 573,
-    pullRequests: 48,
-    starredRepos: 26,
-    favoriteLanguages: ['JavaScript', 'HTML', 'CSS']
+  getCertificates: function() {
+    return [
+      { name: 'Frontend Web Development', issuer: 'Udacity' },
+      { name: 'JavaScript Algorithms and Data Structures', issuer: 'freeCodeCamp' }
+    ];
   },
-  getRecentRepos: () => [
-    { name: 'repo1', description: 'Description of repo1' },
-    { name: 'repo2', description: 'Description of repo2' },
-    { name: 'repo3', description: 'Description of repo3' }
-  ]
+  getRecentRepos: function() {
+    return [
+      { name: 'repo1', description: 'Description of repo1' },
+      { name: 'repo2', description: 'Description of repo2' },
+      { name: 'repo3', description: 'Description of repo3' }
+    ];
+  },
+  getCodingStats: function() {
+    return {
+      totalCommits: 573,
+      pullRequests: 48,
+      starredRepos: 26,
+      favoriteLanguages: ['JavaScript', 'HTML', 'CSS']
+    };
+  }
 };
 ```
 
