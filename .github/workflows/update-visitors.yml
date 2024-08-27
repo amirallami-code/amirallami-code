@@ -18,7 +18,7 @@ jobs:
         echo "$VISITORS_COUNT"
         
         echo "Extracting count..."
-        EXTRACTED_COUNT=$(echo "$VISITORS_COUNT" | grep -oP '(?<=<tspan[^>]*>)[^<]+' | tr -d '\n')
+        EXTRACTED_COUNT=$(echo "$VISITORS_COUNT" | grep -oP '<tspan[^>]*>([0-9]+)</tspan>' | grep -o '[0-9]\+')
         echo "Extracted count: $EXTRACTED_COUNT"
         
         if [ -n "$EXTRACTED_COUNT" ] && [[ "$EXTRACTED_COUNT" =~ ^[0-9]+$ ]]; then
