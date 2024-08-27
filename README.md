@@ -4,7 +4,7 @@ const aboutMe = () => {
     innerName: "Amirhossein Allami",
     innerBirthday: "October 7",
     quote: "I develop what comes to my head with some style",
-    hobbies: ["coding", "algorithm", "game"],
+    hobbies: ["coding", "algorithm", "reading"],
     getHobbiesCount: function () {
       return this.hobbies.length;
     },
@@ -23,8 +23,6 @@ const aboutMe = () => {
 const myInfo = aboutMe();
 console.log(myInfo.introduce());
 ```
-
-Visitors: 0
 
 <div align="center">
   <img src="https://skillicons.dev/icons?i=html,css,js,tailwind,bootstrap,regex,git,wordpress"/> 
