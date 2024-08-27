@@ -13,7 +13,7 @@ jobs:
       - name: Update README
         run: |
           echo "Fetching visitor count..."
-          VISITORS_COUNT=$(curl -s "https://profile-counter.glitch.me/{YOUR-USERNAME}/count.svg")
+          VISITORS_COUNT=$(curl -s "https://profile-counter.glitch.me/amirallami-code/count.svg")
           echo "Raw SVG content:"
           echo "$VISITORS_COUNT"
 
