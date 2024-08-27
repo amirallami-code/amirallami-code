@@ -3,44 +3,29 @@ const developerProfile = {
   name: 'Amir',
   title: 'Frontend Developer',
   location: 'Shiraz, Iran',
-  
-  skills: ['HTML/CSS', 'JavaScript', 'Tailwind', 'Bootstrap', 'RegEx', 'Git'],
-  
-  passion: 'Crafting responsive and user-friendly web interfaces',
-  
-  interests: ['Web Development', 'UI/UX Design', 'Open Source'],
-  
+  aboutMe: 'Passionate frontend developer with a keen eye for design and a love for clean, efficient code. Always eager to learn and take on new challenges in the ever-evolving world of web development.',
+  skills: ['HTML', 'CSS', 'JavaScript', 'Tailwind', 'Bootstrap', 'RegEx', 'Git'],
   currentlyLearning: 'React',
-  
   contact: {
-    email: 'amirallami.dev@gmail.com',
-    github: 'github.com/amirallami-code',
+    email: 'your.email@example.com',
+    github: 'github.com/yourusername'
   },
-  
-  getFeaturedProject: function() {
-    return {
-      name: 'rock-paper-scissors-game',
-      description: 'Brief description of your best project',
-      technologies: ['JavaScript', 'Tailwind CSS', 'Git'],
-    };
+  certificates: [
+    { name: 'Frontend Web Development', issuer: 'Udacity' },
+    { name: 'JavaScript Algorithms and Data Structures', issuer: 'freeCodeCamp' }
+  ],
+  codingStats: {
+    totalCommits: 573,
+    pullRequests: 48,
+    starredRepos: 26,
+    favoriteLanguages: ['JavaScript', 'HTML', 'CSS']
   },
-  
-  introduce: function() {
-    console.log(`Hello! I'm ${this.name}, a ${this.title} based in ${this.location}.`);
-    console.log(`I specialize in ${this.passion}.`);
-    console.log(`My skills include: ${this.skills.join(', ')}`);
-    console.log(`I'm currently learning ${this.currentlyLearning} to expand my skillset.`);
-    console.log(`Let's connect! Find me on GitHub: ${this.contact.github}`);
-    
-    const project = this.getFeaturedProject();
-    console.log(`Featured Project: ${project.name}`);
-    console.log(`Description: ${project.description}`);
-    console.log(`Technologies used: ${project.technologies.join(', ')}`);
-  }
+  getRecentRepos: () => [
+    { name: 'repo1', description: 'Description of repo1' },
+    { name: 'repo2', description: 'Description of repo2' },
+    { name: 'repo3', description: 'Description of repo3' }
+  ]
 };
-
-// Run this code to learn more about Amir!
-developerProfile.introduce();
 ```
 
 <div align="center">
