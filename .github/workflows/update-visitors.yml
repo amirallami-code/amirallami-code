@@ -1,0 +1,39 @@
+name: Update Visitors Count
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"
+  workflow_dispatch:
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Update README
+        run: |
+          echo "Fetching visitor count..."
+          VISITORS_COUNT=$(curl -s "https://profile-counter.glitch.me/{YOUR-USERNAME}/count.svg")
+          echo "Raw SVG content:"
+          echo "$VISITORS_COUNT"
+
+          EXTRACTED_COUNT=$(echo "$VISITORS_COUNT" | grep -oP '(?<=<text[^>]*>)[^<]+' | head -1)
+          echo "Extracted count: $EXTRACTED_COUNT"
+
+          if [ -n "$EXTRACTED_COUNT" ]; then
+            echo "Updating README..."
+            sed -i "s/Visitors: [0-9]*/Visitors: $EXTRACTED_COUNT/" README.md
+            echo "Updated README content:"
+            cat README.md
+            
+            git config user.name github-actions
+            git config user.email github-actions@github.com
+            git add README.md
+            git diff --cached
+            git commit -m "Update visitors count to $EXTRACTED_COUNT" || echo "No changes to commit"
+            git push
+          else
+            echo "Failed to extract visitor count"
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
