@@ -2,7 +2,7 @@
 const createDeveloperProfile = () => {
   const profile = {
     name: "Amir",
-    role: "Front-end developer",
+    title: "Front-end developer",
     quote: "Turning caffeine into code since 2023",
     interests: ["Web Development", "Algorithm Design", "Linux Systems"],
     technologies: ["HTML/CSS", "JavaScript", "Tailwind", "Bootstrap", "RegEx", "Git"],
