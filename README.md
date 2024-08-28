@@ -2,7 +2,7 @@
 const createDeveloperProfile = () => {
   const profile = {
     name: "Amir",
-    birthday: "October 7",
+    role: "Front-end developer",
     quote: "Turning caffeine into code since 2023",
     interests: ["Web Development", "Algorithm Design", "Linux Systems"],
     technologies: ["HTML/CSS", "JavaScript", "Tailwind", "Bootstrap", "RegEx", "Git"],
@@ -15,7 +15,7 @@ const createDeveloperProfile = () => {
         const developer = {
           name: "${this.name}",
           mantra: "${this.quote}",
-          expertise: ${JSON.stringify(this.specializations)},
+          expertise: ${JSON.stringify(this.interests)},
           stack: ${JSON.stringify(this.technologies)},
           connect: ${JSON.stringify(this.contact)}
         };
