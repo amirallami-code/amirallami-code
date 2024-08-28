@@ -4,7 +4,7 @@ const createDeveloperProfile = () => {
     name: "Amir",
     birthday: "October 7",
     quote: "Turning caffeine into code since 2023",
-    interests: ["Web Development", "Algorithm Design", "Reading"],
+    interests: ["Web Development", "Algorithm Design", "Linux Systems"],
     technologies: ["HTML/CSS", "JavaScript", "Tailwind", "Bootstrap", "RegEx", "Git"],
     contact: {
       email: "amirallami.dev@gmail.com",
