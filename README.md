@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="https://profile-counter.glitch.me/amirallami-code/count.svg" alt="" />
+</div>
+
 ```js
 const createDeveloperProfile = () => {
   const profile = {
