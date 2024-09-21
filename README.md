@@ -17,7 +17,6 @@ const createDeveloperProfile = () => {
   };
   return profile;
 };
-
 const developerProfile = createDeveloperProfile();
 ```
 
