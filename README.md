@@ -21,5 +21,5 @@ const developerProfile = createDeveloperProfile();
 ```
 
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=html,css,js,tailwind,bootstrap,regex,git,wordpress"/> 
+  <img src="https://skillicons.dev/icons?i=html,css,js,tailwind,bootstrap,regex,git,wordpress,photoshop"/> 
 </div>
