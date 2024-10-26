@@ -12,7 +12,8 @@ const createDeveloperProfile = () => {
     contact: {
       email: "amirallami.dev@gmail.com",
       github: "github.com/amirallami-code",
-      linkedin: "linkedin.com/in/amirhosseinallami"
+      linkedin: "linkedin.com/in/amirhosseinallami",
+      leetcode: "leetcode.com/amirallami-code/"
     }
   };
   return profile;
