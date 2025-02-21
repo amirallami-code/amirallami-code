@@ -10,6 +10,7 @@ const createDeveloperProfile = () => {
     languages: ["English (Fluent)", "Persian (Native)"],
 
     contact: {
+      website: "amirallami.com",
       email: "amirallami.dev@gmail.com",
       github: "github.com/amirallami-code",
       linkedin: "linkedin.com/in/amirhosseinallami",
