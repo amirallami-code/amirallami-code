@@ -26,6 +26,6 @@ const developerProfile = createDeveloperProfile();
   
   <img src="https://skillicons.dev/icons?i=html,css,js,react,tailwind,git,github,wordpress,php,photoshop"/> 
   
-  ![](https://komarev.com/ghpvc/?username=amirallami-code&color=gray&style=flat-square&abbreviated=true)
+  ![](https://komarev.com/ghpvc/?username=amirallami-code&color=blue&style=pastel&abbreviated=true)
   
 </div>
