@@ -23,10 +23,7 @@ const developerProfile = createDeveloperProfile();
 ```
 
 <div align="center">
-  
   <img src="https://skillicons.dev/icons?i=html,css,js,react,tailwind,git,github,wordpress,php,photoshop"/> 
   
   ![](https://komarev.com/ghpvc/?username=amirallami-code&color=blue&abbreviated=true)
-[![wakatime](https://wakatime.com/badge/user/ea37a3e6-62f6-4820-87db-7f654e64d96c.svg)](https://wakatime.com/@ea37a3e6-62f6-4820-87db-7f654e64d96c)
-  
 </div>
