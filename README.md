@@ -7,7 +7,7 @@ const createDeveloperProfile = () => {
     interests: ["Web Development", "Algorithm Design", "AI", "Linux Systems"],
     technologies: ["ReactJS", "TypeScript", "NextJS", "Tailwind", "Git"],
     strengths: ["Problem-solving", "Attention to detail", "Fast learner"],
-    languages: ["🇺🇸 English (Fluent)", "🇮🇷 Persian (Native)"],
+    languages: ["English (Fluent)", "Persian (Native)"],
 
     contact: {
       website: "amirallami.com",
