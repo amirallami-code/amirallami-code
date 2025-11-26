@@ -13,7 +13,7 @@ const createDeveloperProfile = () => {
       website: "amirallami.com",
       email: "amirallami.dev@gmail.com",
       github: "github.com/amirallami-code",
-      linkedin: "linkedin.com/in/amirhosseinallami",
+      linkedin: "linkedin.com/in/amirallami",
       leetcode: "leetcode.com/amirallami-code"
     }
   };
